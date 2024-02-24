@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    {% for n in news %}
+        <h1>{{ n.title }}</h1>
+        <p>{{ n.text }}</p>
+        <br />{{ n.published }}
+        <br />{{ n.author }}
+    {% endfor %}
+</body>
+</html>
